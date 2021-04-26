@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.container {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.container header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  margin: 2% auto;
+}
+.container header .part1 {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+.container header .part1 .logo h3 {
+  font-size: 36px;
+}
+.container header .part1 nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header .part1 nav ul li {
+  list-style-type: none;
+  padding: 0px 20px;
+  font-size: 0.9em;
+}
+.container header .searchBar {
+  align-items: center;
+  display: flex;
+  margin-right: 5%;
+}
+.container header .searchBar input {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #C4C4C4;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container header .searchBar img {
+  width: 20px;
+}
+.container main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% auto;
+  height: 80vh;
+  width: 90%;
+}
+.container main .block1 {
+  width: 30%;
+  align-self: center;
+}
+.container main .block1 .ht {
+  animation: levitate 2s ease-in-out infinite;
+}
+.container main .block1 .ht p {
+  font-size: 48px;
+  font-size: 900;
+  line-height: 53px;
+}
+.container main .block1 .ht p span {
+  display: block;
+}
+.container main .block1 .st {
+  margin: 2% auto;
+}
+.container main .block1 .st p {
+  font-size: 17px;
+}
+.container main .block1 .navi {
+  margin-top: 10%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container main .block1 .navi .navchild {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+}
+.container main .block2 {
+  width: 50%;
+  margin-right: 20%;
+  transform: translateY(-6%);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/Ellipse.svg);
+  background-position: center;
+}
+.container main .block2 img {
+  width: 100%;
+  animation: move 4s ease-in-out infinite;
+}
+.container main .block3 {
+  align-self: center;
+}
+.container main .block3 img {
+  width: 60%;
+}
+.container main .add img {
+  background: #FF0000;
+  border-radius: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 15%;
+  right: 35%;
+}
+.container main .price {
+  position: fixed;
+  top: 14%;
+  right: 30%;
+}
+.container main .price p {
+  font-size: 26px;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes move {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: rotateZ(74deg);
+  }
+  75% {
+    transform: rotateZ(-190deg);
+  }
+  100% {
+    transform: rotate(0) scale(0);
+  }
+}
+@keyframes levicate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
