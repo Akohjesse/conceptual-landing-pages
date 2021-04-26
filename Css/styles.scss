@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+@mixin align($top){
+    margin:$top auto;
+}
+@mixin flex($justify){
+    display:flex;
+    justify-content: $justify;
+    align-items: center;
+}
+body{
+    overflow-y: scroll;
+}
+.container{
+    width:100%;
+    font-family:'Poppins', sans-serif;
+    header{
+        width:90%;
+        @include flex(space-between);
+        align-items: center;
+        @include align(2%);
+
+        .part1{
+            width:40%;
+            @include flex(space-between);
+            align-items: center;
+            .logo{
+       
+                h3{
+                    font-size: 36px;
+                }
+            }
+            nav{
+                ul{
+                    @include flex(space-between);
+                    li{
+                        list-style-type: none;
+                        padding:0px 20px;
+                        font-size:0.9em;
+                    }
+                }
+            }
+        }
+        .searchBar{
+          align-items: center;
+          display: flex;
+          margin-right:5%;
+         input{
+             display: inline-block;
+            height: 38px;
+            padding: 0 30px;
+            color:#C4C4C4;
+            text-align: center;
+            font-size: 0.9em;
+            line-height: 38px;
+            letter-spacing: .1rem;
+            border: none;
+            background-color: transparent;
+            border-radius: 4px;
+            cursor: pointer;
+         }
+         img{
+             width:20px;
+         }
+        }
+    }
+
+    main{
+        @include flex(space-between);
+        @include align(1%);
+        height:80vh;
+        width:90%;
+        .block1{
+            width:30%;
+            align-self: center;
+            .ht{
+                p{
+                    font-size: 48px;
+                    font-size: 900;
+                    line-height: 53px;
+                    span{
+                        display: block;
+                    }
+                }
+                animation:levitate 2s ease-in-out infinite;
+            }
+            .st{
+                @include align(2%);
+                p{
+                    font-size:17px;
+                }
+               
+            }
+            .navi{
+                margin-top:10%;
+                width:50%;
+                @include flex(space-between);
+              .navchild{
+                  display: inline-flex;
+                  align-content: center;
+                  align-items:center;
+
+              }
+            }
+        }
+        .block2{
+            width:50%;
+            margin-right:20%;
+            transform: translateY(-6%);
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-image: url(../assets/Ellipse.svg);
+            background-position: center;
+            img{
+                width:100%;
+                animation:move 4s ease-in-out infinite;
+            }
+        }
+        .block3{
+            align-self: center;
+            img{
+                width:60%;
+            }
+        }
+        .add{
+            img{
+                background:#FF0000;
+            border-radius: 100%;
+            padding:10px;
+            position:fixed;
+            top:15%;
+            right:35%;
+            }
+        }
+        .price{
+            position:fixed;
+            top:14%;
+            right:30%;
+            p{
+                font-size:26px;
+            }
+        }
+    }
+}
+@keyframes levitate{
+    0%{ transform:translateY(0)}
+    50%{transform: translateY(-30px);}
+    100%{transform: translateY(0);}
+}
+@keyframes move {
+    0%{transform: scale(0);}
+    25%{transform: scale(1)};
+    50%{transform:rotateZ(74deg)}
+    75%{transform: rotateZ(-190deg);}
+    100%{transform:rotate(0) scale(0)}
+}
+
+@keyframes levicate{
+    0%{ transform:translateY(0)}
+    50%{transform: translateY(30px);}
+    100%{transform: translateY(0);}
+}
