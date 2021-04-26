@@ -178,8 +178,8 @@ body {
 
 .container main .block2 img {
   width: 100%;
-  -webkit-animation: move 4s ease-in-out infinite;
-          animation: move 4s ease-in-out infinite;
+  -webkit-animation: move 4s ease-in-out 1;
+          animation: move 4s ease-in-out 1;
 }
 
 .container main .block3 {
