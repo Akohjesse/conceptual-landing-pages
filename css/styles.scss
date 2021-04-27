@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+@mixin align($top){
+    margin:$top auto;
+}
+@mixin flex($justify){
+    display:flex;
+    justify-content: $justify;
+    align-items: center;
+}
+@font-face {
+    font-family:Circular;
+    src: url(../Assets/circularstd-book.otf);
+  }
+@mixin button($bg-color, $color){
+    cursor: pointer;
+    border:none;
+    box-sizing: border-box; 
+    display: inline-block;
+    font-family: Circular;
+    height: 38px;
+    padding: 0 31px;
+    text-align: center;
+    text-decoration: none;
+     background-color: $bg-color;
+     color: $color;
+}
+body{
+    overflow-y:hidden;
+}
+.container{
+    width:100%;
+    font-family: Circular;
+    header{
+        width:95%;
+        @include align(2%);
+        @include flex(space-between);
+        .logo{
+            @include flex(none);
+        }
+        nav{
+            ul{
+                @include flex(space-between);
+                li{
+                    list-style-type: none;
+                    padding:0px 20px;
+                    font-size:0.9em;
+                }
+            }
+        }
+        .register{
+           @include flex(center);
+            .signIn{
+                button{
+                    @include button(white, black);
+                    font-size:0.9em;
+                }
+            }
+            .signUp{
+                button{
+                    @include button(rgba(0, 0, 0, 1), white);
+                    font-size:0.9em;
+                }
+            }
+        }
+
+    }
+    main{
+        @include flex(space-between);
+        align-items:unset;
+        @include align(7%);
+        width:95%;
+        .block_1{
+            margin-left: 9%;
+            width:50%;
+            .text_h1{
+                font-size:55px;
+                font-weight: 900;
+                line-height: 70px;
+                p{
+                    span{
+                        display: block;
+                    }
+                }
+            }
+            .cont_2{
+                @include flex(none);
+                margin:35px 0;
+                width:100%;
+                .moreTxt{
+                    p{
+                        font-size:16px;
+                        line-height: 24px;
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+                .arrowed_btn{
+                    margin-left:12%;
+                    padding:15px;
+                    background:black;
+                    width:auto;
+                    
+                }
+            }
+            .payments{
+               display: flex;
+                margin-top:18%;
+                width:50%;
+                justify-content: space-between;
+            }
+        }
+        .block_2{
+            height:auto;
+            width:50%;
+            background-size:contain;
+            background-position:5%;
+            background-repeat: no-repeat;
+            background-image: url(../Assets/Ellipse15.svg);
+            .assets{
+              display:flex;
+              align-items: center;
+              flex-direction: column;
+              img{
+                  width:100%;
+              }
+                .card2{
+                   z-index:10;
+                   animation: levitate 3s ease-in-out infinite;
+                }
+                .card1{
+                   position:relative;
+                   top:-130px;
+                   right:70px;
+                   z-index:2;
+                   transform: rotateX(60deg);
+                   animation: levicate 6s ease-in-out infinite;
+                }
+                .spiral{
+                    position:relative;
+                   top:-150px;
+                   right:30px;
+                    img{
+                        width:70%;
+                    }
+                }
+            }
+        }
+    }
+}
+.shine{
+    position:fixed;
+    left:0px;
+    top:30%;
+}
+hr{
+    width:70%;
+    position: relative;
+    top:50px;
+}
+
+@keyframes levitate{
+    0%{ transform:translateY(0)}
+    50%{transform: translateY(-30px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes levicate {
+    0%{ transform: translate(0) rotate(0deg)}
+    25%{transform: rotateY(190deg) ;}
+    50%{transform: rotateY(280deg)}
+    75%{transform: rotateX(70deg);}
+    100%{transform: rotateY(190deg) }
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url(../Assets/circularstd-book.otf);
+}
+body {
+  overflow-y: hidden;
+}
+
+.container {
+  width: 100%;
+  font-family: Circular;
+}
+.container header {
+  width: 95%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header .logo {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+}
+.container header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header nav ul li {
+  list-style-type: none;
+  padding: 0px 20px;
+  font-size: 0.9em;
+}
+.container header .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header .register .signIn button {
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Circular;
+  height: 38px;
+  padding: 0 31px;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-size: 0.9em;
+}
+.container header .register .signUp button {
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Circular;
+  height: 38px;
+  padding: 0 31px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-size: 0.9em;
+}
+.container main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: unset;
+  margin: 7% auto;
+  width: 95%;
+}
+.container main .block_1 {
+  margin-left: 9%;
+  width: 50%;
+}
+.container main .block_1 .text_h1 {
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 70px;
+}
+.container main .block_1 .text_h1 p span {
+  display: block;
+}
+.container main .block_1 .cont_2 {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  margin: 35px 0;
+  width: 100%;
+}
+.container main .block_1 .cont_2 .moreTxt p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.container main .block_1 .cont_2 .moreTxt p span {
+  display: block;
+}
+.container main .block_1 .cont_2 .arrowed_btn {
+  margin-left: 12%;
+  padding: 15px;
+  background: black;
+  width: auto;
+}
+.container main .block_1 .payments {
+  display: flex;
+  margin-top: 18%;
+  width: 50%;
+  justify-content: space-between;
+}
+.container main .block_2 {
+  height: auto;
+  width: 50%;
+  background-size: contain;
+  background-position: 5%;
+  background-repeat: no-repeat;
+  background-image: url(../Assets/Ellipse15.svg);
+}
+.container main .block_2 .assets {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container main .block_2 .assets img {
+  width: 100%;
+}
+.container main .block_2 .assets .card2 {
+  z-index: 10;
+  animation: levitate 3s ease-in-out infinite;
+}
+.container main .block_2 .assets .card1 {
+  position: relative;
+  top: -130px;
+  right: 70px;
+  z-index: 2;
+  transform: rotateX(60deg);
+  animation: levicate 6s ease-in-out infinite;
+}
+.container main .block_2 .assets .spiral {
+  position: relative;
+  top: -150px;
+  right: 30px;
+}
+.container main .block_2 .assets .spiral img {
+  width: 70%;
+}
+
+.shine {
+  position: fixed;
+  left: 0px;
+  top: 30%;
+}
+
+hr {
+  width: 70%;
+  position: relative;
+  top: 50px;
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes levicate {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  25% {
+    transform: rotateY(190deg);
+  }
+  50% {
+    transform: rotateY(280deg);
+  }
+  75% {
+    transform: rotateX(70deg);
+  }
+  100% {
+    transform: rotateY(190deg);
+  }
+}
