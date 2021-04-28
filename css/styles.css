@@ -21,8 +21,8 @@ body {
 }
 
 .container header {
-  width: 95%;
-  margin: 2% auto;
+  width: 92%;
+  margin: 3% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +133,7 @@ body {
 .container main .block_1 .text_h1 {
   font-size: 55px;
   font-weight: 900;
-  line-height: 70px;
+  line-height: 65px;
 }
 
 .container main .block_1 .text_h1 p span {
@@ -150,13 +150,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 35px 0;
+  margin: 40px 0;
   width: 100%;
 }
 
 .container main .block_1 .cont_2 .moreTxt p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 .container main .block_1 .cont_2 .moreTxt p span {
@@ -241,7 +241,7 @@ body {
 }
 
 hr {
-  width: 70%;
+  width: 50%;
   position: relative;
   top: 50px;
 }

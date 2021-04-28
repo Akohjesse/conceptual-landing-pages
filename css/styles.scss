@@ -37,8 +37,8 @@ body{
     width:100%;
     font-family: Circular;
     header{
-        width:95%;
-        @include align(2%);
+        width:92%;
+        @include align(3%);
         @include flex(space-between);
         .logo{
             @include flex(none);
@@ -81,7 +81,7 @@ body{
             .text_h1{
                 font-size:55px;
                 font-weight: 900;
-                line-height: 70px;
+                line-height: 65px;
                 p{
                     span{
                         display: block;
@@ -90,12 +90,12 @@ body{
             }
             .cont_2{
                 @include flex(none);
-                margin:35px 0;
+                margin:40px 0;
                 width:100%;
                 .moreTxt{
                     p{
                         font-size:16px;
-                        line-height: 24px;
+                        line-height: 20px;
                         span{
                             display: block;
                         }
@@ -160,7 +160,7 @@ body{
     top:30%;
 }
 hr{
-    width:70%;
+    width:50%;
     position: relative;
     top:50px;
 }
