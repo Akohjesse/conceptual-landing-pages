@@ -22,7 +22,7 @@ body {
 
 .container header {
   width: 92%;
-  margin: 3% auto;
+  margin: 2% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ body {
 }
 
 .container main .block_1 .text_h1 {
-  font-size: 55px;
+  font-size: 54px;
   font-weight: 900;
   line-height: 65px;
 }
@@ -184,8 +184,8 @@ body {
 .container main .block_2 {
   height: auto;
   width: 50%;
-  background-size: contain;
-  background-position: 5%;
+  background-size: 90%;
+  background-position: left;
   background-repeat: no-repeat;
   background-image: url(../Assets/Ellipse15.svg);
 }
@@ -227,7 +227,7 @@ body {
 .container main .block_2 .assets .spiral {
   position: relative;
   top: -150px;
-  right: 30px;
+  right: 10px;
 }
 
 .container main .block_2 .assets .spiral img {

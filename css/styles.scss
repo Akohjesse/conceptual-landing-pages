@@ -38,7 +38,7 @@ body{
     font-family: Circular;
     header{
         width:92%;
-        @include align(3%);
+        @include align(2%);
         @include flex(space-between);
         .logo{
             @include flex(none);
@@ -79,7 +79,7 @@ body{
             margin-left: 9%;
             width:50%;
             .text_h1{
-                font-size:55px;
+                font-size:54px;
                 font-weight: 900;
                 line-height: 65px;
                 p{
@@ -119,8 +119,8 @@ body{
         .block_2{
             height:auto;
             width:50%;
-            background-size:contain;
-            background-position:5%;
+            background-size:90%;
+            background-position:left;
             background-repeat: no-repeat;
             background-image: url(../Assets/Ellipse15.svg);
             .assets{
@@ -145,7 +145,7 @@ body{
                 .spiral{
                     position:relative;
                    top:-150px;
-                   right:30px;
+                   right:10px;
                     img{
                         width:70%;
                     }
