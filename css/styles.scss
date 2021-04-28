@@ -37,7 +37,7 @@ body{
     width:100%;
     font-family: Circular;
     header{
-        width:92%;
+        width:90%;
         @include align(2%);
         @include flex(space-between);
         .logo{
@@ -76,10 +76,10 @@ body{
         @include align(7%);
         width:95%;
         .block_1{
-            margin-left: 9%;
+            margin-left:9%;
             width:50%;
             .text_h1{
-                font-size:54px;
+                font-size:64px;
                 font-weight: 900;
                 line-height: 65px;
                 p{
@@ -90,7 +90,7 @@ body{
             }
             .cont_2{
                 @include flex(none);
-                margin:40px 0;
+                margin:10% 0;
                 width:100%;
                 .moreTxt{
                     p{
@@ -111,7 +111,7 @@ body{
             }
             .payments{
                display: flex;
-                margin-top:18%;
+                margin-top:10%;
                 width:50%;
                 justify-content: space-between;
             }
@@ -119,7 +119,7 @@ body{
         .block_2{
             height:auto;
             width:50%;
-            background-size:90%;
+            background-size:contain;
             background-position:left;
             background-repeat: no-repeat;
             background-image: url(../Assets/Ellipse15.svg);
@@ -158,6 +158,7 @@ body{
     position:fixed;
     left:0px;
     top:30%;
+    width:6%;
 }
 hr{
     width:50%;
