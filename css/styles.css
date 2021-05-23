@@ -247,6 +247,56 @@ hr {
   top: 50px;
 }
 
+@media (max-width: 1100px) {
+  .container main .block_1 {
+    margin-left: 5%;
+  }
+  .container main .block_1 .text_h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .container main .block_1 .cont_2 {
+    margin: 10% 0;
+    width: 100%;
+  }
+  .container main .block_1 .cont_2 .moreTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container main .block_1 .cont_2 .moreTxt p span {
+    display: block;
+  }
+  .container main .block_1 .payments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20%;
+  }
+  .container main .block_2 .assets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container main .block_2 .assets img {
+    width: 80%;
+  }
+  .container main .block_2 .spiral {
+    position: relative;
+    top: 20%;
+    right: 10px;
+  }
+  .container main .block_2 .spiral img {
+    width: 80%;
+  }
+}
+
 @-webkit-keyframes levitate {
   0% {
     -webkit-transform: translateY(0);

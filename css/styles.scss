@@ -166,6 +166,56 @@ hr{
     top:50px;
 }
 
+
+@media (max-width:1100px){
+   .container {
+       main{
+        .block_1{
+            margin-left:5%;
+            .text_h1{
+                font-size:50px;
+                line-height: 55px;
+            }
+            .cont_2{
+                margin:10% 0;
+                width:100%;
+                .moreTxt{
+                    p{
+                        font-size:16px;
+                        line-height: 24px;
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .payments{
+                display: flex;
+                 margin-top:20%;
+             }
+        }
+
+        .block_2{
+            .assets{
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                img{
+                    width:80%;
+                }
+            }
+            .spiral{
+                position:relative;
+               top:20%;
+               right:10px;
+                img{
+                    width:80%;
+                }
+            }
+        }
+       }
+   }
+}
 @keyframes levitate{
     0%{ transform:translateY(0)}
     50%{transform: translateY(-30px);}
